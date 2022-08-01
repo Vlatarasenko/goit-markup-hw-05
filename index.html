@@ -25,13 +25,13 @@
           <a href="./index.html" class="logo">Web<span class="accent">Studio</span></a>
           <ul class="site-nav">
             <li class="nav-item">
-              <a href="./index.html" class="link current">Студия</a>
+              <a href="./index.html" class="link current">Студія</a>
             </li>
             <li class="nav-item">
-              <a href="./portfolio.html" class="link">Портфолио</a>
+              <a href="./portfolio.html" class="link">Портфоліо</a>
             </li>
             <li class="nav-item">
-              <a href="" class="link">Контакты</a>
+              <a href="" class="link">Контакти</a>
             </li>
           </ul>
         </nav>
@@ -58,14 +58,29 @@
     <main>
       <section class="hero section">
         <div class="container">
-          <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-          <button type="button" name="order service" class="hero-button">Заказать услугу</button>
+          <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
+          <button data-modal-open type="button" name="order service" class="hero-button">
+            Замовити послугу
+          </button>
+        </div>
+        <div class="backdrop is-hidden" data-modal>
+          <div class="modal">
+            <button type="button" class="modal-close-icon" data-modal-close>
+              <svg class="close-icon">
+                <use
+                  href="./images/icon/symbol-defs.svg#icon-close"
+                  width="11px"
+                  height="11px"
+                ></use>
+              </svg>
+            </button>
+          </div>
         </div>
       </section>
 
       <section class="section">
         <div class="container">
-          <h2 class="section-title hidden">Преимущества</h2>
+          <h2 class="section-title hidden">Переваги</h2>
           <ul class="feature-list">
             <li class="feature-item">
               <div class="feature-icon">
@@ -73,9 +88,9 @@
                   <use href="./images/icon/symbol-defs.svg#icon-antenna"></use>
                 </svg>
               </div>
-              <h3 class="feature-title">Внимание к деталям</h3>
+              <h3 class="feature-title">увага до деталей</h3>
               <p class="feature-text">
-                Идейные соображения, а также начало повседневной работы по формированию позиции.
+                Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.
               </p>
             </li>
             <li class="feature-item">
@@ -84,9 +99,9 @@
                   <use href="./images/icon/symbol-defs.svg#icon-clock"></use>
                 </svg>
               </div>
-              <h3 class="feature-title">Пунктуальность</h3>
+              <h3 class="feature-title">пунктуальність</h3>
               <p class="feature-text">
-                Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
+                Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.
               </p>
             </li>
             <li class="feature-item">
@@ -95,9 +110,9 @@
                   <use href="./images/icon/symbol-defs.svg#icon-diagrama"></use>
                 </svg>
               </div>
-              <h3 class="feature-title">Планирование</h3>
+              <h3 class="feature-title">планування</h3>
               <p class="feature-text">
-                Равным образом консультация с широким активом в значительной степени обуславливает.
+                Так само консультація з широким активом значною мірою зумовлює.
               </p>
             </li>
             <li class="feature-item">
@@ -106,9 +121,9 @@
                   <use href="./images/icon/symbol-defs.svg#icon-astronaut"></use>
                 </svg>
               </div>
-              <h3 class="feature-title">Современные технологии</h3>
+              <h3 class="feature-title">сучасні технології</h3>
               <p class="feature-text">
-                Значимость этих проблем настолько очевидна, что реализация плановых заданий.
+                Значимість цих проблем настільки очевидна, що реалізація планових завдань.
               </p>
             </li>
           </ul>
@@ -117,16 +132,25 @@
 
       <section class="section about">
         <div class="container">
-          <h2 class="section-title">Чем мы занимаемся</h2>
+          <h2 class="section-title">Чим ми займаємося</h2>
           <ul class="about-list">
             <li class="about-item">
-              <img src="./images/box-1.jpg" width="370" height="294" alt="продукт 1" />
+              <div class="about-action">
+                <img src="./images/box-1.jpg" width="370" height="294" alt="продукт 1" />
+                <p class="about-text">Десктопні додатки</p>
+              </div>
             </li>
             <li class="about-item">
-              <img src="./images/box-2.jpg" width="370" height="294" alt="продукт 2" />
+              <div class="about-action">
+                <img src="./images/box-2.jpg" width="370" height="294" alt="продукт 2" />
+                <p class="about-text">Мобільні додатки</p>
+              </div>
             </li>
             <li class="about-item">
-              <img src="./images/box-3.jpg" width="370" height="294" alt="продукт 3" />
+              <div class="about-action">
+                <img src="./images/box-3.jpg" width="370" height="294" alt="продукт 3" />
+                <p class="about-text">Дизайнерські рішення</p>
+              </div>
             </li>
           </ul>
         </div>
@@ -138,7 +162,7 @@
           <ul class="team-list">
             <li class="team-item">
               <img src="./images/img1.jpg" width="270" height="260" alt="участник команды 1" />
-              <h3 class="team-name">Игорь Демьяненко</h3>
+              <h3 class="team-name">Ігор Дем`яненко</h3>
               <p class="team-position">Product Designer</p>
               <ul class="team-social-list">
                 <li class="team-social-item">
@@ -173,7 +197,7 @@
             </li>
             <li class="team-item">
               <img src="./images/img2.jpg" width="270" height="260" alt="участник команды 2" />
-              <h3 class="team-name">Ольга Репина</h3>
+              <h3 class="team-name">Ольга Репіна</h3>
               <p class="team-position">Frontend Developer</p>
               <ul class="team-social-list">
                 <li class="team-social-item">
@@ -208,7 +232,7 @@
             </li>
             <li class="team-item">
               <img src="./images/img3.jpg" width="270" height="260" alt="участник команды 3" />
-              <h3 class="team-name">Николай Тарасов</h3>
+              <h3 class="team-name">Микола Тарасов</h3>
               <p class="team-position">Marketing</p>
               <ul class="team-social-list">
                 <li class="team-social-item">
@@ -243,7 +267,7 @@
             </li>
             <li class="team-item">
               <img src="./images/img4.jpg" width="270" height="260" alt="участник команды 4" />
-              <h3 class="team-name">Михаил Ермаков</h3>
+              <h3 class="team-name">Михайло Єрмаков</h3>
               <p class="team-position">UI Designer</p>
               <ul class="team-social-list">
                 <li class="team-social-item">
@@ -281,7 +305,7 @@
       </section>
       <section class="section clients">
         <div class="container">
-          <h2 class="section-title">Постоянные клиенты</h2>
+          <h2 class="section-title">Постійні клієнти</h2>
           <ul class="clients-list">
             <li class="clients-list-item">
               <a class="clients-link" href="">
@@ -340,7 +364,7 @@
                   href="https://goo.gl/maps/HEMFCHXjC1AX881L7"
                   rel="noopener, noreferrer"
                   class="map-link"
-                  >г. Киев, пр-т Леси Украинки, 26</a
+                  >м. Київ, пр-т Лесі Українки, 26</a
                 >
               </li>
               <li class="footer-list-item">
@@ -353,7 +377,7 @@
           </address>
         </div>
         <div class="social">
-          <h3 class="social-title">присоединяйтесь</h3>
+          <h3 class="social-title">приєднуйтесь</h3>
           <ul class="social-list">
             <li class="social-list-item">
               <a class="social-link" href="">
@@ -387,5 +411,7 @@
         </div>
       </div>
     </footer>
+
+    <script src="./js/modal.js"></script>
   </body>
 </html>
